@@ -1,14 +1,14 @@
-# Network Speed Monitor
+# Internet Speed Meter
 
 A Flutter package for monitoring network speed.
 
 ## Installation
 
-Add `network_speed_monitor` to your `pubspec.yaml` file:
+Add `internet_speed_meter ` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  network_speed_monitor: ^1.0.0
+  internet_speed_meter: ^1.0.2
 ```
 
 ## Permissions
@@ -40,16 +40,16 @@ Ensure that you have the necessary permissions in your AndroidManifest.xml file:
 Import the package in your Dart file:
 
 ```dart
-import 'package:network_speed_monitor/network_speed_monitor.dart';
+import 'package:internet_speed_meter/internet_speed_meter.dart';
 ```
 
-Create an instance of NetworkSpeedMonitor and use the realtimeInternetSpeed stream to get real-time internet speed updates:
+Create an instance of InternetSpeedMeter and use the getCurrentInternetSpeed stream to get real-time internet speed updates:
 
 ```dart
 void main() {
-  NetworkSpeedMonitor monitor = NetworkSpeedMonitor();
+  InternetSpeedMeter _internetSpeedMeterPlugin = InternetSpeedMeter();
 
-  monitor.realtimeInternetSpeed().listen((speed) {
+  _internetSpeedMeterPlugin.getCurrentInternetSpeed().listen((speed) {
     print('Current Speed: $speed');
   });
 }

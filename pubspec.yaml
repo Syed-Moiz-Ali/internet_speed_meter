@@ -1,6 +1,6 @@
 name: internet_speed_meter
 description: "The Network Speed Monitor Flutter package provides a simple and efficient way to monitor network speed in real-time within your Flutter applications. With this package, you can easily retrieve and display the current network speed, enabling your users to stay informed about their internet connection performance."
-version: 1.0.1
+version: 1.0.2
 homepage: "https://github.com/Syed-Moiz-Ali/internet_speed_meter"
 
 environment:
