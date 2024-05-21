@@ -1,6 +1,6 @@
 # Internet Speed Meter
 
-A Flutter package for monitoring network speed.
+A Flutter package for monitoring internet speed.
 
 ## Installation
 
@@ -8,7 +8,7 @@ Add `internet_speed_meter ` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  internet_speed_meter: ^1.0.2
+  internet_speed_meter: ^1.0.3
 ```
 
 ## Permissions
@@ -16,22 +16,8 @@ dependencies:
 Ensure that you have the necessary permissions in your AndroidManifest.xml file:
 
 ```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yourapp">
-    <!-- Other permissions and declarations -->
-
-    <!-- Required for checking network connectivity -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!-- Required for accessing the internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-    <application
-        <!-- Other application configurations -->
-    >
-        <!-- Activities, services, receivers, etc. -->
-
-    </application>
-</manifest>
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+ <uses-permission android:name="android.permission.INTERNET"/>
 
 ```
 
@@ -58,7 +44,7 @@ void main() {
 
 ## Features
 
-- Real-time monitoring of network speed.
+- Real-time monitoring of internet speed.
 - Supports both kbps and Mbps units.
 
 ## Contributing
@@ -71,6 +57,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ```vbnet
 
-This README.md file provides clear instructions on how to install the package, use the `NetworkSpeedMonitor` class, and contribute to the project.
+This README.md file provides clear instructions on how to install the package, use the `InternetSpeedMeter` class, and contribute to the project.
 
 ```
